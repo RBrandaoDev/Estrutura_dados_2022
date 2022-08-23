@@ -23,5 +23,23 @@ public class Questao02 {
                 
                 System.out.printf("\n");
         }    
+            
+                int maxValue= Integer.MIN_VALUE; 
+                int minValue = Integer.MAX_VALUE;
+                
+                 for(int linhas=0;linhas<3;linhas++){
+                     for(int cols=0;cols<4;cols++){
+                         
+                        if (matriz[linhas][cols]>maxValue)	
+                                maxValue=matriz[linhas][cols];
+                        
+                        if (matriz[linhas][cols]<minValue)	
+                               minValue=matriz[linhas][cols];
+                    }
+                }
+                 
+                 System.out.println("O maior valor � " + maxValue);
+                 System.out.println("O menor valor � " + minValue);
+    
     }
 }
